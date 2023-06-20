@@ -1,0 +1,23 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  border: 1px dotted red;
+  /*Flex Box */
+  display: flex;
+  /* Changing defaut (row) direction*/
+  flex-direction: row;
+  /* Control if content can wrap, default (no-wrap)*/
+  flex-wrap: wrap;
+  /* Controls content horizontal layout, default (flex-start)*/
+  justify-content: center;
+  /* Controls content vertical layout, default (flex-stratch)*/
+  align-content: center;
+}
+
+li {
+  border: 1px solid black;
+  margin: 0.5em;
+  padding: 0.5em;
+}
