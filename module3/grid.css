@@ -6,19 +6,25 @@ body {
 #gridcontainer {
   min-width: 850px;
   display: grid;
+  grid-template:
+    "header header"
+    "nav nav "
+    "main aside"
+    "footer footer";
   grid-template-columns: 1fr 25%;
   grid-template-rows: 100px 50px auto 50px;
-  grid-template:
-    "header header header header"
-    "nav nav nav nav"
-    "main main main aside"
-    "footer footer footer footer";
 }
 
 header {
   grid-area: header;
-  background-color: rgb(223, 223, 223);
-  text-shadow: rgb(98, 85, 34) 1px 0 10px;
+  background-color: #a4c2a5;
+  text-shadow: #566246;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  padding-left: 20px;
 }
 
 nav {
@@ -31,6 +37,9 @@ nav {
 nav li {
   list-style: none;
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
@@ -43,22 +52,36 @@ aside {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(223, 223, 223);
-  text-shadow: rgb(98, 85, 34) 1px 0 10px;
+  color: rgb(201, 201, 201);
+  background-color: #3a3a39;
+  text-shadow: rgb(234, 234, 234) 1px 0px 5px;
 }
 
 figcaption {
+  font-size: smaller;
   text-align: center;
   font-style: italic;
 }
 
 main {
+  display: flex;
   grid-area: main;
   background-color: white;
+  padding-left: 20px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 footer {
   grid-area: footer;
-  background-color: rgb(223, 223, 223);
+  background-color: #f1f2eb;
   font-style: italic;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
