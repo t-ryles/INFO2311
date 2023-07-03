@@ -1,0 +1,22 @@
+/* 
+      Taj-Hakeem Ryles
+        Assignemnt4.css
+        INFO 2311
+        Olberding
+        June 29, 2023
+*/
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.gridImg {
+  background-color: slategray;
+  padding: 10px;
+}
+
+.gridImg > img {
+}
