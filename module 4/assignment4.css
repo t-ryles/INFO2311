@@ -9,14 +9,16 @@
 #container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 15px;
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
 }
 
-.gridImg {
-  background-color: slategray;
-  padding: 10px;
+.gridItem {
+  border: 1px solid black;
+  background-color: #ddd;
+  padding: 40px;
 }
 
-.gridImg > img {
+.gridItem > img {
+  padding-left: 25px;
 }
