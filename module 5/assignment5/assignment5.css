@@ -22,6 +22,11 @@ section {
   background-color: #efefef;
 }
 
+svg {
+  font-size: 30px;
+  font-weight: 600;
+}
+
 main {
   grid-area: main;
   background-color: #efefef;
