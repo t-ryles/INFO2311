@@ -1,1 +1,45 @@
-{\rtf1}
+.container {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-areas:
+    "head head head head"
+    "section main main main"
+    "section main main main"
+    "footer footer footer footer";
+
+  grid-template-rows: auto 1fr 30px;
+  grid-template-columns: 300px 1fr;
+}
+
+header {
+  grid-area: head;
+  background-color: #efefef;
+}
+
+section {
+  grid-area: section;
+  background-color: #efefef;
+}
+
+main {
+  grid-area: main;
+  background-color: #efefef;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #efefef;
+}
+
+.gridItem {
+  background-color: #efefef;
+  padding: 20px;
+  border: 1px solid rgb(38, 38, 38);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
