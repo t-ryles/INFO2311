@@ -8,13 +8,16 @@
     "section main main main"
     "footer footer footer footer";
 
-  grid-template-rows: auto 1fr 30px;
+  grid-template-rows: 310px 1fr 30px;
   grid-template-columns: 300px 1fr;
 }
 
 header {
   grid-area: head;
-  background-color: #efefef;
+  background-image: url("./images/-backgroundImage.png");
+  color: azure;
+  font-size: 70px;
+  text-shadow: 2px 2px 5px black;
 }
 
 section {
@@ -27,9 +30,24 @@ svg {
   font-weight: 600;
 }
 
+p {
+  font-size: 22px;
+}
+
+q {
+  font-size: 16px;
+}
+
 main {
   grid-area: main;
   background-color: #efefef;
+  flex-direction: column;
+}
+
+video {
+  width: 700px;
+  height: auto;
+  padding-top: 10%;
 }
 
 footer {
