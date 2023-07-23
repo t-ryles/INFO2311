@@ -23,18 +23,20 @@
 
   <nav class="navbar-expand-xl bg-dark navbar-dark">
     <div class="container-fluid">
-      <a href="#" class="navbar-brand">INFO</a>
+      <div class="d-flex align-items-center">
+        <a href="#" class="navbar-brand">INFO</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs--target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toogle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toogle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarText">
-        <div class="navbar-nav ms-auto">
-          <a href="" class="nav-item nav-link active" href="#" aria-current="page">Home</a>
-          <a href="" class="nav- nav-link" href="#">Programs</a>
-          <a href="" class="nav-item nav-link" href="#">Contact Us</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-item nav-link active" href="#" aria-current="page">Home</a>
+            <a class="nav-item nav-link" href="#">Programs</a>
+            <a class="nav-item nav-link" href="#">Contact Us</a>
+          </div>
         </div>
       </div>
     </div>
@@ -42,25 +44,93 @@
 
   <main class="container-fluid bg-white mx-auto my-0 p-0">
     <div id="carouselInfo" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner active">
-        <img src="./images/keyboard_1200.jpg" alt="Keyboard" class="d-lg-block">
-        <h2 class="fs-1" style="text-shadow: 3px 3px 5px black">Creativity</h2>
-        <p class="fs-2" style="text-shadow: 3px 3px 5px black">An important skill to have in Web Development.</p>
+      <div class="carousel-inner">
+
+        <!--Carousel Images -->
+        <div class="carousel-item active">
+          <img src="./images/keyboard_1200.jpg" alt="Keyboard" class="d-lg-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="fs-1" style="text-shadow: 3px 3px 5px black">Creativity</h2>
+            <p class="fs-2" style="text-shadow: 3px 3px 5px black">An important skill to have in Web Development.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./images/desk_1200.jpg" alt="Keyboard" class="d-lg-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="fs-1" style="text-shadow: 3px 3px 5px black">Team Work</h2>
+            <p class="fs-2" style="text-shadow: 3px 3px 5px black">An important skill to have in Web Development.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./images/ethernet_1200.jpg" alt="Keyboard" class="d-lg-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="fs-1" style="text-shadow: 3px 3px 5px black">Problem Solving</h2>
+            <p class="fs-2" style="text-shadow: 3px 3px 5px black">An important skill to have in Web Development.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="carousel-inner">
-        <img src="./images/desk_1200.jpg" alt="Keyboard" class="d-lg-block">
-        <h2 class="fs-1" style="text-shadow: 3px 3px 5px black">Creativity</h2>
-        <p class="fs-2" style="text-shadow: 3px 3px 5px black">An important skill to have in Web Development.</p>
+      <!--Carousel buttons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselInfo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselInfo" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Staff Cards-->
+    <h2 class="m-3">INFO Staff</h2>
+    <div class="d-flex justify-content-center flex-wrap">
+
+      <!--Info Cards-->
+      <div class="card m-3" style="max-width: 400px;">
+        <img src="./images/art_300.jpg" alt="Authur Brown" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Authur Brown II</h5>
+          <p class="cared-text">A.A.S., Metropolitan Community College; B.S. Bellevue University, M.S.Ed, University of
+            Nebraska Kearney</p>
+          <div class="card-footer">
+            <small class="text-muted">Dean of Information Technology</small>
+          </div>
+        </div>
       </div>
 
-      <div class="carousel-inner">
-        <img src="./images/ethernet_1200.jpg" alt="Keyboard" class="d-lg-block">
-        <h2 class="fs-1" style="text-shadow: 3px 3px 5px black">Problem Solving</h2>
-        <p class="fs-2" style="text-shadow: 3px 3px 5px black">An important skill to have in Web Development.</p>
+      <div class="card m-3" style="max-width: 400px;">
+        <img src="./images/olberding_300.jpg" alt="Laurie Olberding" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Laurie Olberding</h5>
+          <p class="cared-text">B.S., University of Nebraska-Lincoln; M.Ed., Peru State College</p>
+          <div class="card-footer">
+            <small class="text-muted">Computer Programming Technology Instructor</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="card m-3" style="max-width: 400px;">
+        <img src="./images/guillermo_300.jpg" alt="LGuillermo Joseph Rosas" class="card-img-top" />
+        <div class="card-body">
+          <h5 class="card-title">Guillermo Joseph Rosas</h5>
+          <p class="cared-text">A.A.S., Community College of the Air Force; B.S., MBA, Bellevue University</p>
+          <div class="card-footer">
+            <small class="text-muted">Information Technology Instructor</small>
+          </div>
+        </div>
       </div>
     </div>
   </main>
+
+  <footer class="bg-dark text-white py-3 p-3">
+    <p class="text-end">&#169; Created by Your Name <a class="text-info"
+        href="mailto:teryles@mail.mccneb.edu">Taj-Hakeem Ryles</a></p>
+  </footer>
+
+
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
