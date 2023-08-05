@@ -1,0 +1,18 @@
+@import "./_header";
+
+$primaryButton : red;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: $primaryButton;
+}
+
+#content {
+  @include flexCenter();
+  @extend header;
+}

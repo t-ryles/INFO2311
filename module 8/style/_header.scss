@@ -1,0 +1,12 @@
+header {
+  @include flexCenter();
+  background-color: lightskyblue;
+  height: 100vh;
+
+  button {
+    color: aqua;
+    &:hover {
+      background-color: green;
+    }
+  }
+}
