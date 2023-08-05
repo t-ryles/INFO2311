@@ -1,26 +1,35 @@
 /* Variables - key : value pairs*/
-$mycolor : #326582;
+//$mycolor : #326582;
+$padding: 15px;
+$borders: 15px;
+$desktop: 840px;
 
 /* SASS Map; key : value paris */
-$colors : (
-  primary : #326582,
-  primary-light : lighten(#326582, 40%),
-  primary-dark : darken(#326582, 40%),
-  accent: #658942
+$colors: (
+  primary: #326582,
+  primary-light: lighten(#326582, 40%),
+  primary-dark: darken(#326582, 40%),
+  accent: #a1be2f,
 );
 
-$padding : 15px;
-$borders : 15px;
-
-body , html {
-  height: 100%;
-}
 /* SASS Functions*/
 @function color($colors-name) {
-  @return map-get($colors, $colors-name)
+  @return map-get($colors, $colors-name);
 }
 
+/* Mixin for media query*/
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
 
+body,
+html {
+  height: 100%;
+}
+
+/* SASS Code*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
@@ -34,6 +43,10 @@ body {
     height: 100%;
     position: absolute;
     z-index: -1;
+
+    @include desktop {
+      clip-path: polygon(0 0, 73% 0, 52% 100%, 0% 100%);
+    }
   }
 
   header a {
@@ -41,22 +54,32 @@ body {
     text-decoration: none;
     padding: $padding;
     display: block;
-    text-decoration: uppercase;
-    // text-transform: uppercase;
+    text-transform: uppercase;
   }
-
 }
 
 main {
-  
-  section#card{
+  @include desktop {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "primary card";
+  }
+
+  section#card {
     background: #fff;
     padding: $padding + 5px;
     // Center card
     margin: 1em auto;
     border-radius: $borders;
-    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 80%;
+
+    @include desktop {
+      grid-area: card;
+      height: fit-content;
+      margin: 1em;
+      align-self: center;
+    }
   }
 
   ul {
@@ -85,14 +108,26 @@ main {
   }
 
   section#primary {
-    color : #fff;
+    color: #fff;
     padding: $padding;
     text-align: center;
+
+    @include desktop {
+      grid-area: primary;
+      text-align: left;
+      margin: 4em 0 0 4em;
+    }
 
     h1 {
       font-size: 3em;
       margin-top: 10px;
       text-transform: uppercase;
+
+      @include desktop {
+        width: 30%;
+        font-size: 4em;
+        line-height: 0.9em;
+      }
     }
 
     p {
