@@ -3,9 +3,59 @@ body {
   margin: 0px;
 }
 
-header {
+$colors: (
+  black: #212727,
+  darkGray: #313737,
+  lightGray: #cbced5,
+  accent: #ff3f54,
+  darkAccent: #4a1518,
+);
+
+/* SASS Functions*/
+@function color($colors-name) {
+  @return map-get($colors, $colors-name);
+}
+
+@mixin centerFlexbox() {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  @include centerFlexbox();
+  padding: 10px 0px 0px 0px;
+
+  div {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 6.5em;
+    text-shadow: 2px 2px 8px color(accent);
+  }
+
+  p {
+    font-size: 2em;
+    text-shadow: 0px 0px 10px color(darkAccent);
+  }
+}
+
+.navbar {
+  padding: 0px;
+}
+
+nav {
+  a {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+}
+
+.list-group {
+  a {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
 }
