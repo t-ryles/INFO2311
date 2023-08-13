@@ -1,0 +1,26 @@
+@import "mainStyle";
+
+header {
+  h1 {
+    display: flex;
+    font-size: 7em;
+    color: color(lightGray);
+    text-shadow: 2px 2px 8px color(darkAccent);
+    padding: 1%;
+    margin: auto;
+  }
+
+  p {
+    @include centerFlexbox();
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    font-size: 1.75em;
+    padding-top: 2%;
+  }
+
+  span {
+    font-size: 2em;
+  }
+}

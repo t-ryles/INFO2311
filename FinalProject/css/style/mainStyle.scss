@@ -22,18 +22,23 @@ $colors: (
   align-items: center;
 }
 
+@mixin heroText() {
+  font-size: 6.5em;
+  text-shadow: 2px 2px 8px color(accent);
+}
+
+h1 {
+  @include heroText();
+  @include centerFlexbox();
+  text-shadow: 2px 2px 8px color(accent);
+}
+
 .image-container {
-  display: flex;
   @include centerFlexbox();
   padding: 10px 0px 0px 0px;
 
   div {
     text-align: center;
-  }
-
-  h1 {
-    font-size: 6.5em;
-    text-shadow: 2px 2px 8px color(accent);
   }
 
   p {
@@ -58,4 +63,10 @@ nav {
     font-size: 1.2em;
     font-weight: bold;
   }
+}
+
+footer {
+  @include centerFlexbox();
+  flex-direction: column;
+  padding-top: 2%;
 }
