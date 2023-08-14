@@ -1,0 +1,21 @@
+@import "mainStyle";
+
+header {
+  h1 {
+    display: flex;
+    font-size: 7em;
+    color: color(lightGray);
+    text-shadow: 2px 2px 8px color(darkAccent);
+    padding: 1%;
+    margin: auto;
+  }
+}
+
+.container {
+  width: 75%;
+}
+
+.linkButton {
+  margin: 1% 45%;
+  padding: 2px 20px;
+}

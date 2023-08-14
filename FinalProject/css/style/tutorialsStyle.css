@@ -1,0 +1,68 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* SASS Functions*/
+h1 {
+  font-size: 6.5em;
+  text-shadow: 2px 2px 8px #ff3f54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 8px #ff3f54;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 0px 0px;
+}
+.image-container div {
+  text-align: center;
+}
+.image-container p {
+  font-size: 2em;
+  text-shadow: 0px 0px 10px #4a1518;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+nav a {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.list-group a {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2%;
+}
+
+header h1 {
+  display: flex;
+  font-size: 7em;
+  color: #cbced5;
+  text-shadow: 2px 2px 8px #4a1518;
+  padding: 1%;
+  margin: auto;
+}
+
+.container {
+  width: 75%;
+}
+
+.linkButton {
+  margin: 1% 45%;
+  padding: 2px 20px;
+}/*# sourceMappingURL=tutorialsStyle.css.map */
