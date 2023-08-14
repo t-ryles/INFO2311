@@ -1,0 +1,38 @@
+@import "mainStyle";
+
+$desktop: 990px;
+
+@mixin responsive-margin($max-width, $margin) {
+  @media (max-width: $max-width) {
+    margin: $margin;
+  }
+}
+
+header {
+  h1 {
+    display: flex;
+    font-size: 7em;
+    color: color(lightGray);
+    text-shadow: 2px 2px 8px color(darkAccent);
+    padding: 1%;
+    margin: auto;
+  }
+}
+
+main {
+  padding-top: 3%;
+
+  .row {
+    @include responsive-margin(990px, 3%);
+  }
+
+  .col-md-6 {
+    margin: 0px;
+    @include centerFlexbox();
+  }
+
+  .card {
+    margin-top: 5%;
+    width: 400px;
+  }
+}

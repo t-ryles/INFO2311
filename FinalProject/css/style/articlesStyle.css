@@ -57,17 +57,22 @@ header h1 {
   padding: 1%;
   margin: auto;
 }
-header p {
+
+main {
+  padding-top: 3%;
+}
+@media (max-width: 990px) {
+  main .row {
+    margin: 3%;
+  }
+}
+main .col-md-6 {
+  margin: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
-  width: 70%;
-  margin: auto;
-  font-size: 1.75em;
-  padding-top: 2%;
 }
-header span {
-  font-size: 2em;
-}/*# sourceMappingURL=aboutStyle.css.map */
+main .card {
+  margin-top: 5%;
+  width: 400px;
+}/*# sourceMappingURL=articlesStyle.css.map */
